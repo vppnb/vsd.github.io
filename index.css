@@ -1,0 +1,51 @@
+body {
+background-position:top center;
+background-size: 100% auto;
+}
+/* 展示内容整体 */
+#content {
+position: fixed;
+/* top可以调节显示内容距离手机顶部的距离 */
+top: 自适应px;
+}
+/* 搜索框 */
+.search_bar {
+/* 阴影效果 */
+box-shadow: 0 0 5px rgba(70,70,40,0.255);
+/* 模糊效果 */
+backdrop-filter: blur(5px);
+/* 背景色 */
+background-color: rgba(255,255,255,.100);
+/* 圆角 */
+border-radius: 15px;
+display: table;
+/* 宽度 */
+width: 85%;
+/* 高度 */
+height: 30px;
+max-width: 400px;
+margin: 20px auto;
+text-align:center;
+font-size:30px;
+border:1;
+outline:none;
+font-weight:560;
+-webkit-transition-duration: 0.2s;
+transition-duration: 0.2s;
+animation:search-bar 1s;
+}
+/* 搜索框的动画 */
+@keyframes search-bar {
+0% {max-width: 100px;}
+100% {max-width: 400px;}
+}
+/* 用于设置搜索时的词条联想框 */
+.opSug_wpr {
+border-radius:15px 15px 15px 15px;
+border:0 none !important;
+border-top:10px solid transparent !important;
+background: rgba(255,255,255,0.2) !important;
+backdrop-filter: blur(5px);
+transform: translate(0%,-10%);
+width:85% !important;
+} 
